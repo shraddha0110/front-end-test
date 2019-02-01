@@ -1,0 +1,114 @@
+body {
+  font: 15px/1.5 "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #171716;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.images {
+  width: 100%;
+  margin: auto;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: center;
+ 
+}
+
+#flickr img {
+  border-radius: 5px;
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  #flickr img {
+    border-radius: 5px;
+    width: 80%;
+    height: 60%;
+  }
+}
+
+#flickr img:hover, button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: black;
+  margin: 10% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgb(0,0,0,0.2),  0 7px 20px 0 rgb(0,0,0,0.2);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.modal-content img {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+  
+}
+
+@keyframes modalopen{
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+.closeBtn {
+  color: #CCC;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+  color: #FFC000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination {
+  margin: 0 auto;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+button {
+  background: #FFC000;
+  padding: 1em 4em;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
