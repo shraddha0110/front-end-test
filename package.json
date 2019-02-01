@@ -1,0 +1,22 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "description": "Front End Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shraddha0110/front-end-test.git"
+  },
+  "author": "Shraddha Naik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shraddha0110/front-end-test/issues"
+  },
+  "homepage": "https://github.com/shraddha0110/front-end-test#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
