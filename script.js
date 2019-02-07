@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   fetch(
-    "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=e519b31973160a93d9d1dc4ea9950772&gallery_id=72157692049980335&format=json&nojsoncallback=1&auth_token=72157706436247475-4c4370275fd023db&api_sig=060ad82483dff444eee2b8b952502be1"
+    "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=5cff03df921b0ddea671c615f360bb3e&gallery_id=72157692049980335&format=json&nojsoncallback=1&auth_token=72157689492006053-0e5bde7ba573ae2b&api_sig=af511f15919c0f93ba4c35dca7483913"
   )
     .then(response => response.json())
     .then(data => {
